@@ -1,0 +1,100 @@
+.single-content{
+    margin-top: 15%;
+    padding: 2% 1.1% 2% 2%;
+
+    height: auto;
+    min-height: 100vh;
+}
+
+.single-content .heading{
+    margin-left: 0;
+    text-align: center;
+}
+
+.single-content .wp-post-image{
+    position: relative;
+    margin-top: -5%;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+
+    mask-image: linear-gradient(90deg, black 70%, transparent 100%);
+    -webkit-mask-image: -webkit-linear-gradient(90deg, black 70%, transparent 100%);
+}
+
+.single-content p,
+.single-content h2,
+.single-content h3,
+.single-content h4,
+.single-content h5,
+.single-content .wp-block-table,
+.single-content .wp-block-image{
+    padding: 0 10% 0 10%;
+    margin-left: 0;
+}
+
+.single-content .wp-block-group p,
+.single-content .wp-block-group .wp-block-image{
+    padding: 0!important;
+}
+
+.single-content .wp-block-group{
+    padding: 0 5.3% 0 5.3%;
+}
+
+
+.single-content figure.wp-block-gallery.has-nested-images .wp-block-image{
+    padding: 0;
+}
+
+.wp-block-button__link {
+    color: black;
+    background-color: white;
+    border: solid black 0.5px;
+}
+
+.wp-block-button__link:hover{
+    color: white;
+    background-color: black;
+    border: solid black 0.5px;
+}
+
+//blog posts in the single posts
+.single-content .wp-block-latest-posts {
+    width: 101.7%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+}
+
+.single-content .wp-block-latest-posts.wp-block-latest-posts__list li{
+    text-align: center;
+    list-style: none;
+    border-radius: 50px;
+
+    width: 300px;
+    height: 300px;
+    
+    cursor: pointer;
+}
+
+.single-content .wp-block-latest-posts.wp-block-latest-posts__list li:hover {
+    border: solid 0.5px black;
+    cursor: pointer;
+}
+
+.single-content .wp-block-latest-posts__featured-image img{
+    margin: 0;
+    width: 100%;
+    height: 230px;
+    border-radius: 50px 50px 0 0;
+}
+
+.wp-block-embed iframe {
+    position: relative;
+    display: block;
+    // width: 100%;
+    // height: 410px;
+}

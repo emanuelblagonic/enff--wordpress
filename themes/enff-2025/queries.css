@@ -1,0 +1,84 @@
+/*  mobile-friends */
+@media (max-width: 575.98px) {
+  .news,
+  .menu-button {
+    display: none;
+  }
+  header {
+    width: 95%;
+  }
+  ul.header {
+    margin-left: 4%;
+    -webkit-backdrop-filter: none;
+  }
+  .header li a {
+    font-size: 12px !important;
+  }
+  ul.sub-menu {
+    margin-top: 4.5%;
+  }
+  .country-selector.weglot-inline.weglot-default {
+    bottom: 19px;
+    top: 10%;
+    right: 10%;
+    height: 27px;
+  }
+  .content-section {
+    width: 100%;
+  }
+  .header-image {
+    margin: 50% 2.5% 0 0.5%;
+  }
+  .latest-edition li,
+  .latest-edition li img {
+    height: auto;
+  }
+  .latest-edition h2 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .more-movies {
+    top: 80%;
+    margin: 0 3% 0 1%;
+  }
+  .movie-spotlight img,
+  .movie-spotlight p,
+  .has-text-align-center {
+    width: 75%;
+  }
+  .page-container {
+    margin-bottom: 10%;
+  }
+  .page-container .wp-block-latest-posts {
+    padding: 10%;
+  }
+  .single-content {
+    margin-top: 40%;
+  }
+  .single-content .heading {
+    text-align: left;
+  }
+  footer {
+    width: 75%;
+    display: block;
+    left: 12.5%;
+  }
+  .footer-bottom {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-bottom span,
+  .footer-top a {
+    line-height: 1;
+  }
+}
+
+/* @media (min-width: 1900px){
+
+} */
+/*# sourceMappingURL=queries.css.map */

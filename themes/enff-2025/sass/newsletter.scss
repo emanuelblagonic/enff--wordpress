@@ -1,0 +1,43 @@
+.newsletter-wrapper{
+    margin-top: 10%;
+}
+
+.newsletter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-wrapper h2{
+    margin-left: 0;
+    text-align: center;    
+    font-size: 1.5em;
+}
+
+#mc_embed_shell{
+    width: 55%;
+}
+
+#mc_embed_signup .clear{
+    display: flex;
+    justify-content: center;
+}
+
+// overwrite
+#mc_embed_signup input {
+    border: 1px solid black!important;
+    -webkit-border-radius: 10px!important;
+    -moz-border-radius: 10px!important;
+    border-radius: 10px!important;
+}
+
+#mc_embed_signup .button{
+    border-radius: 10px!important;
+    background-color: transparent!important;
+    color: black!important;
+}
+
+#mc_embed_signup .button:hover{
+    background-color: black!important;
+    color: white!important;
+}

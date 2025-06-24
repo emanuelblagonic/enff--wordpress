@@ -1,0 +1,160 @@
+/*  mobile-friends */ 
+// @media (max-width: 575.98px)
+@media (max-width: 575.98px){
+    p.has-background,
+    .has-text-align-center{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .news,
+    .search-bar{
+        display: none;
+    }
+
+    header{
+        width: 95%;
+        height: 150px;
+    }
+
+    .header li {
+        padding-right: 5px;
+    }
+
+    ul.header{
+        // margin-left: 4%;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .header li a{
+        font-size: 12px!important;
+    }
+
+    // ul.sub-menu{
+    //     // margin-top: 4.5%;
+    //     // left: 42%
+    //     // display: none;
+    // }
+
+    #sub-menu-2 {
+        margin-left: 13.5%;
+    }
+
+    .content-section{
+        width: 100%;
+    }
+
+    .header-image{
+        margin: 34% 2.5% 0 0.5%;
+    }
+
+    .top-3 ul li{
+        width: 60%;
+    }
+
+    .top-3 ul li:nth-child(2){
+        margin: 1%;
+        margin-left: 35%;
+    }
+
+    .top-3 ul li .wp-block-latest-posts__post-title{
+        font-size: 20px;
+    }
+
+    .edition-module {
+        margin-bottom: 10%;
+    }
+
+    .latest-edition .wp-block-latest-posts {
+        margin: 0% 0 15% 0 ;
+    }
+
+    .latest-edition li,
+    .latest-edition li img{
+        height: 100px;
+    }
+
+    .latest-edition h2{
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .more-movies{
+        top: 90%;
+        margin: 0 3% 0 1%;
+    }
+
+    .movie-spotlight img, 
+    .movie-spotlight p{
+        width: 80%;
+    }
+
+    .newsletter p.has-text-align-center{
+        margin: 0 3% 0 3%;
+    }
+
+    #mc_embed_shell{
+        width: 75%;
+    }
+
+    .page-container{
+        margin-bottom: 10%;
+    }
+
+    .page-container .wp-block-latest-posts{
+        padding: 10%;
+    }
+
+    .wp-block-latest-posts__featured-image a{
+        width: 100%;
+    }
+
+    .single-content{
+        margin-top: 40%;
+        padding: 2% 3.5% 2% 1.5%;
+    }
+
+    .single-content .heading{
+        text-align: left;
+    }
+
+    .single-content p,
+    .single-content h2,
+    .single-content h3,
+    .single-content h4,
+    .single-content h5,
+    .single-content .wp-block-table,
+    .single-content .wp-block-image{
+        padding: 0;
+    }
+
+    .single-content .wp-block-latest-posts{
+        margin: 0 0 0 12.5%;
+    }
+
+    iframe{
+        width: 100%!important;
+    }
+
+    footer{
+        width: 75%;
+        display: block;
+        left: 12.5%;
+    }
+
+    .footer-bottom{
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-bottom span,
+    .footer-top a{
+        line-height: 1;
+    }
+}
+
+/* @media (min-width: 1900px){
+
+} */

@@ -1,0 +1,24 @@
+.spotlight-wrapper {
+    margin-bottom: 10%;
+}
+
+.movie-spotlight {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-spotlight figure {
+    width: 100%;
+    position: relative;
+    display: contents;
+}
+
+.movie-spotlight img{
+    width: 50%;
+}
+
+.movie-spotlight p {
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+}

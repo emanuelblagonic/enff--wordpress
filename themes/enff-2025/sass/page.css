@@ -1,0 +1,105 @@
+.content-section {
+  position: relative;
+  width: 75%;
+  height: 100vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.page-container {
+  padding: 2%;
+  height: auto;
+}
+
+.page-container h1,
+.page-container h2 {
+  margin-left: 0;
+}
+
+.page-heading {
+  text-align: center;
+  border-bottom: solid black;
+}
+
+.wp-block-embed__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wp-block-embed figcaption {
+  text-align: center;
+}
+
+.page-container .wp-block-latest-posts {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 101%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  -ms-grid-rows: (minmax(300px, 1fr))[auto-fill];
+      grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 50px;
+}
+
+.page-container .wp-block-latest-posts.wp-block-latest-posts__list li,
+.post-thumbnail {
+  text-align: center;
+  list-style: none;
+  border-radius: 50px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.page-container .wp-block-latest-posts.wp-block-latest-posts__list li:hover,
+.post-thumbnail:hover {
+  border: solid 0.5px black;
+  cursor: pointer;
+}
+
+.page-container .wp-block-latest-posts__featured-image img {
+  width: 100%;
+  height: 230px;
+  border-radius: 50px 50px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.metaslider .caption-wrap {
+  background: none !important;
+  text-align: center;
+  opacity: 1;
+}
+
+.metaslider .flexslider .flex-direction-nav li a {
+  width: 35 !important;
+  height: 35 !important;
+  background-image: none !important;
+  -webkit-transition: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+}
+
+.metaslider .flexslider .flex-direction-nav .flex-next,
+.metaslider .flexslider .flex-direction-nav .flex-prev {
+  border: solid yellow !important;
+  border-width: 0 3px 3px 0 !important;
+  display: inline-block !important;
+  padding: 3px !important;
+}
+
+.metaslider .flexslider .flex-direction-nav .flex-nav-next .flex-next {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.metaslider .flexslider .flex-direction-nav .flex-nav-prev .flex-prev {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+/*# sourceMappingURL=page.css.map */

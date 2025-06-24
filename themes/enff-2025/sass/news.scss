@@ -1,0 +1,95 @@
+@import "variables";
+
+.news {
+    position: fixed;
+
+    width: 25%;
+    height: 100vh;
+
+    top: 0%;
+    right: 0;
+    margin-bottom: 50px;
+
+    background-color: $enff-purple;
+    border-left: solid 0.5px;
+
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: $z-index-front;
+}
+
+ul.news-list{
+    margin: 0;
+    padding: 0;
+}
+
+ul.news-list li{
+    margin-bottom: 10px;
+    padding: 5px;
+    right: 0;
+
+    border-radius: 10px 10px 10px 0;
+    background-color: black;
+    color: white;
+}
+
+ul.news-list li a{
+    width: 100%;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+.wp-block-latest-posts__post-title,
+.wp-block-latest-posts__post-date,
+.wp-block-latest-posts__post-excerpt{
+    margin-bottom: 10px;
+}
+
+.wp-block-latest-posts__featured-image img{
+    width: 100%;
+    max-width: 100%!important;
+    border-radius: 4px;
+}
+
+.scroll-news{
+    position:absolute;
+    height: 100%;
+
+    top:10%;
+    margin: 5px;
+
+    animation: scroll 60s linear 3s infinite;
+}
+
+@keyframes scroll {
+    95% { top: -100%; }
+    100% { top:0; }
+  }
+
+.news h1 {
+    position: fixed;
+    width: 25%;
+
+    margin: 0;
+    padding-top: 23px;
+    top: 0;
+
+    text-align: center;
+    background-color: $enff-purple;
+    box-shadow: 0px 7px 5px 0px $enff-purple;
+    -webkit-box-shadow: 0px 7px 5px 0px $enff-purple;
+    -moz-box-shadow: 0px 7px 5px 0px $enff-purple;
+
+    z-index: $z-index-front;
+}
+
+.stop-news{
+    font-size: 35px;
+    padding: 0 10px 0 10px;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+

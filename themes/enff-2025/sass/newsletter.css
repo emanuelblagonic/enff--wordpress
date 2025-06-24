@@ -1,0 +1,49 @@
+.newsletter-wrapper {
+  margin-top: 10%;
+}
+
+.newsletter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsletter-wrapper h2 {
+  margin-left: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#mc_embed_shell {
+  width: 55%;
+}
+
+#mc_embed_signup .clear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mc_embed_signup input {
+  border: 1px solid black !important;
+  border-radius: 10px !important;
+}
+
+#mc_embed_signup .button {
+  border-radius: 10px !important;
+  background-color: transparent !important;
+  color: black !important;
+}
+
+#mc_embed_signup .button:hover {
+  background-color: black !important;
+  color: white !important;
+}
+/*# sourceMappingURL=newsletter.css.map */

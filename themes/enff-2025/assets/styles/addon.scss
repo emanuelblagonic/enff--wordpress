@@ -1,0 +1,219 @@
+//  Addon styles for ENFF 2025 theme update
+
+//  =Variables
+$color-primary: #9900CC;
+
+body {
+  padding-top: 52px;
+  overflow: visible;
+  
+  .wrapper {
+    display: grid;
+    
+    .news {
+      grid-row: 3;
+    }
+  }
+}
+
+header {
+  width: 100vw;
+  height: auto;
+  border-radius: 0;
+  margin: 0;
+  border: 0;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 16px 16px;
+  border-bottom: 1px solid white;
+  
+  .header-top {
+    margin: 0;
+    display: block;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: white;
+  }
+
+  //  Toggle
+  $toggle-size: 28px;
+  $line-height: 3px;
+  $line-spacing: 10px;
+  $line-color: white;
+  
+  .toggle {
+    display: inline-block;
+    width: $toggle-size;
+    height: $toggle-size;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    top: 13px;
+    right: 16px;
+  
+    span,
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $line-height;
+      background-color: $line-color;
+      transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+    }
+  
+    span {
+      display: block;
+      top: ($toggle-size - $line-height) / 2;
+    }
+  
+    &::before {
+      top: ($toggle-size - (2 * $line-spacing)) / 2;
+    }
+  
+    &::after {
+      top: ($toggle-size + (2 * $line-spacing)) / 2 - $line-height;
+    }
+  }
+  
+  .is-open {
+    .toggle {
+      &::before {
+        transform: rotate(45deg);
+        top: ($toggle-size - $line-height) / 2;
+      }
+  
+      &::after {
+        transform: rotate(-45deg);
+        top: ($toggle-size - $line-height) / 2;
+      }
+  
+      span {
+        opacity: 0;
+      }
+    }
+  }
+
+  
+  //  =Navigation
+  ul.header {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    grid-gap: 1px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    
+    li {
+      padding: 0;
+    }
+    
+    a {
+      font-weight: bold;
+      font-size: .95rem !important;
+      padding: 6px 0;
+      display: block;
+      color: white;
+      border-top: 1px solid rgba(255,255,255,.25);
+    }
+    
+    li:last-child a {
+      color: #111 !important;
+      border-bottom: 1px solid rgba(255,255,255,.25);
+    }
+  }
+  
+  .is-open {
+
+    ul.header,
+    .search-bar {
+      display: block;
+    }
+  }
+  
+  
+  .header-bottom {
+    flex-direction: column;
+  }
+  
+  //  =Search
+  .search-bar {
+    margin: 16px 0 0;
+    display: none;
+    
+    #s {
+      width: 100%;
+      background: white;
+      border: 0;
+      font-size: 16px;
+      height: auto;
+      padding: 8px 12px;
+      font-weight: bold;
+    }
+    
+    #searchsubmit {
+      background: white;
+      margin-left: 4px;
+      color: $color-primary;
+      border: 0;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+
+}
+
+
+//  =Main =Content
+.content-section {
+  margin: 0 auto;
+  width: auto;
+  overflow: visible;
+  height: auto;
+  
+  .gradient-top,
+  .gradient-bottom {
+    display: none;
+  }
+  
+  .header-image {
+    margin: 0;
+  }
+}
+
+//  =News
+.news {
+  display: block !important;
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  border: 0;
+  top: auto;
+  right: auto;
+  z-index: 1;
+  
+  h1 {
+    position: relative;
+    width: auto;
+    padding: 0;
+  }
+  
+  .scroll-news {
+    position: relative;
+    height: auto;
+    margin: 0;
+    top: auto !important;
+  }
+}
