@@ -1,12 +1,5 @@
 <?php get_header(); ?>
 
-<div class="news">
-	<h1>{{ newsTitle }} <span class="stop-news" @click="toggleNewsVisibility"> {{ newsVisible ? '✦' : '✧'}}</span></h1>
-	<div class="scroll-news" v-if="newsVisible">
-		<?php dynamic_sidebar('news'); ?>
-	</div>
-</div>
-
 <section class="content-section">
 	<div class="gradient-top"></div>
 	<?php dynamic_sidebar('image'); ?>
@@ -39,5 +32,8 @@
 	</div>
 	<div class="gradient-bottom"></div>
 </section>
+
+<?php get_template_part('partials/sections/section--news'); ?>
+
 
 <?php get_footer(); ?>

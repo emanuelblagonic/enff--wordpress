@@ -44,6 +44,17 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/assets\/js\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/assets\/js\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/assets\/js\/script.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -238,6 +249,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page.php",
+      "oF" : 0
+    },
+    "\/partials\/sections\/section--news.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/partials\/sections\/section--news.php",
+      "oF" : 0
+    },
+    "\/partials\/sections\/section--newsletter.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/partials\/sections\/section--newsletter.php",
       "oF" : 0
     },
     "\/queries.css" : {
@@ -660,6 +687,17 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/script-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/script-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/script.js" : {
       "bF" : 0,

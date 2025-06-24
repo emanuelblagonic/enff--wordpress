@@ -25,12 +25,12 @@
 	<body>
     
     <!-- =Wrapper start -->
-    <div class="wrapper">
+    <!-- <div class="wrapper"> -->
       
 		<header>
 			<div class="header-top">
 				<!-- <h1>{{ mainName }}</h1> -->
-        <h1>Eastern Neighbours Film Festival</h1>
+        <h1><a href="/">Eastern Neighbours Film Festival</a></h1>
 			</div>
       <nav class="header-navigation">
         <a href="#" class="toggle"><span></span>Toggle menu</a>

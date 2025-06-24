@@ -2,20 +2,48 @@
 
 //  =Variables
 $color-primary: #9900CC;
+$max-content-width: 1400px;
 
 body {
   padding-top: 52px;
   overflow: visible;
   
   .wrapper {
-    display: grid;
+    // display: grid;
     
     .news {
       grid-row: 3;
     }
   }
+
+
+  @media only screen and (min-width: 1300px) {
+    // padding: 0 32px;
+    padding-top: 147.5px;
+    
+    > * {
+      
+      &:not(header):not(footer):not(.news) {
+        max-width: $max-content-width;
+        margin: 0 auto !important;
+      }
+    }
+    
+    //  Here we are adding some general rules to make similar look&feel
+    .news {
+      padding: 64px;
+    }
+    
+    .scroll-news,
+    .header-top,
+    .header-navigation  {
+      max-width: $max-content-width;
+      margin: 0 auto !important;
+    }
+  }
 }
 
+//  =Header
 header {
   width: 100vw;
   height: auto;
@@ -36,9 +64,14 @@ header {
   
   h1 {
     margin: 0;
-    font-size: 1.25rem;
-    line-height: 1;
-    color: white;
+    
+    a {
+      font-size: 1.25rem;
+      line-height: 1;
+      color: white;
+      font-family: "Bebas";
+      display: block;
+    }
   }
 
   //  Toggle
@@ -170,6 +203,88 @@ header {
       text-transform: uppercase;
     }
   }
+  
+  
+  @media only screen and (min-width: 1300px) {
+    padding: 32px;
+    
+    h1, h1 a {
+      font-size: 2rem;
+    }
+    
+    .toggle {
+      display: none;
+    }
+    
+    .header-bottom {
+      padding-top: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    ul.header {
+      display: flex !important;
+      flex-direction: row;
+      grid-gap: 16px;
+      margin: 0 auto 0 0;
+      
+      a {
+        font-size: 1.1rem !important;
+        border: none !important;
+      }
+      
+      li:last-child {
+        
+        a {
+          background: white;
+          color: $color-primary !important;
+          padding: 6px 12px;
+          text-shadow: none;
+        }
+      }
+    }
+    
+    .search-bar {
+      margin: 0 0 0 auto;
+      display: block !important;
+    }
+    
+    #searchform {
+      position: relative;
+      right: 5px;
+    }
+  }
+}
+
+//  =Footer
+footer {
+  display: block !important;
+  width: 100%;
+  left: 0;
+  grid-row: 4;
+  position: relative;
+  border: 0;
+  border-radius: 0;
+  z-index: 1;
+  text-align: center;
+  padding: 16px;
+  
+  * {
+    color: white;
+    font-size: 1rem !important;
+  }
+  
+  a {
+    border-bottom: 1px solid rgba(255,255,255,.25);
+    font-weight: bold;
+  }
+
+
+  @media only screen and (min-width: 1300px) {
+    width: 100vw;
+    padding: 64px 0;
+  }
 
 }
 
@@ -188,6 +303,27 @@ header {
   
   .header-image {
     margin: 0;
+    padding: 0;
+    
+    img {
+      border-radius: 0;
+    }
+  }
+  
+  .top-3 {
+    // display: none;
+  }
+  
+  :where(.wp-block-columns.is-layout-flex) {
+    grid-gap: 0;
+  }
+  
+  
+  @media only screen and (min-width: 782px) {
+  
+    :where(.wp-block-columns.is-layout-flex) {
+      grid-gap: 16px;
+    }
   }
 }
 
@@ -203,11 +339,18 @@ header {
   top: auto;
   right: auto;
   z-index: 1;
+  background: $color-primary !important;
+  padding: 16px;
+  margin-top: 16px;
   
   h1 {
     position: relative;
     width: auto;
     padding: 0;
+    background: none !important;
+    color: white;
+    box-shadow: none;
+    padding-bottom: 16px;
   }
   
   .scroll-news {
@@ -215,5 +358,199 @@ header {
     height: auto;
     margin: 0;
     top: auto !important;
+    animation: none;
+  }
+  
+  ul.news-list {
+    
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    li {
+      //  Single news item
+      background: white;
+      border-radius: 0;
+      padding: 12px;
+      margin: 0;
+      position: relative;
+      
+      > * {
+
+      }
+      
+      a {
+        background: $color-primary;
+        color: white;
+        font-weight: bold;
+        padding: 4px 8px;
+        display: block;
+        margin: 12px 0;
+        
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+        }
+      }
+      
+      * {
+        color: $color-primary;
+        margin: 0;
+      }
+      
+      img {
+        border-radius: 0;
+      }
+    }
+  }
+  
+  
+  @media only screen and (min-width: 782px) {
+    
+    ul.news-list {
+      
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 16px;
+      }
+    }
+  }
+  
+  
+  @media only screen and (min-width: 1300px) {
+    
+    ul.news-list {
+      
+      ul {
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 16px;
+      }
+    }
+  }
+}
+
+//  =Newsletter
+.newsletter-wrapper {
+  background: #f8f8f8;
+  padding: 16px;
+}
+
+//  =Meta =Slider
+.metaslider {
+  
+  .flexslider {
+    
+    img {
+      border-radius: 0 !important;
+    }
+    
+    .flex-control-nav {
+      
+    }
+    
+    .flex-direction-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 95%;
+
+      li {
+        width: auto;
+        
+        a {
+          position: absolute;
+          top: 50%;
+          transform: translateX(-50%);
+          
+          &.flex-prev {
+            left: 0;
+            transform: rotate(0) !important;
+            -webkit-transform: rotate(0) !important;
+          }
+          
+          &.flex-next {
+            right: 0;
+            transform: rotate(0) !important;
+            -webkit-transform: rotate(0) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//  =Single
+.single-content {
+  margin: 0;
+  padding: 16px;
+  min-height: 0;
+  
+  > * {
+    padding: 0 !important;
+    max-width: 1000px;
+  }
+  
+  .heading {
+    text-align: left;
+  }
+  
+  
+  @media only screen and (min-width: 1300px) {
+    padding: 32px 0;
+    
+  }
+}
+
+//  =Page
+.page-container {
+  
+  .page-heading {
+    text-align: left;
+    border: 0;
+  }
+  
+  img {
+    border-radius: 0 !important;
+  }
+  
+  .wp-block-latest-posts.wp-block-latest-posts__list li {
+    border-radius: 0;
+    height: auto !important;
+    border: .5px solid transparent;
+    
+    .wp-block-latest-posts__featured-image {
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    
+    img {
+      display: block;
+      margin: 0;
+    }
+    
+    .wp-block-latest-posts__post-title {
+      margin: 12px 0;
+      display: block;
+      padding: 0 12px;
+    }
   }
 }

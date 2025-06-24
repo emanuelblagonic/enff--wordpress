@@ -28,14 +28,17 @@ $(document).ready(function(){
     i++;
     console.log(this)
   });
-
-  $(document).on("mousewheel", function() {
-    if($('.content-section').scrollTop() > 400){
-        $('footer').show(400);
-    } else {
-        $('footer').hide(300);
-    }
-  });
+  
+  //  -----
+  //  =update 2025-06-23
+  //  Commented out since it didn't work very well with the new style updates
+  // $(document).on("mousewheel", function() {
+  //   if($('.content-section').scrollTop() > 400){
+  //       $('footer').show(400);
+  //   } else {
+  //       $('footer').hide(300);
+  //   }
+  // });
 
     // $(document).on("mousewheel", function() {
     //   if($('.content-section').scrollTop() > 600){

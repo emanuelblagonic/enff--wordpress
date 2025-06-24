@@ -15,7 +15,7 @@
 </footer>
 
 <!-- =Wrapper end -->
-</div>
+<!-- </div> -->
 
 <?php wp_footer(); ?>
 
