@@ -1,6 +1,6 @@
 <footer>
 	<div class="footer-bottom">
-		<span>{{ copyright }}</span>
+    <span>© 2006 - <?php echo date('Y'); ?> Eastern Neighbours Film Festival</span>
 	</div>
 	<?php
 	wp_nav_menu(

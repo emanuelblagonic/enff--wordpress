@@ -47,6 +47,17 @@ function enff_widget_areas()
         array(
             'before_title' => '',
             'after_title' => '',
+            'before_widget' => '<ul class="news-list homepage-news-list">',
+            'after_widget' => '</ul>',
+            'name' => 'Homepage News',
+            'id' => 'homepage-news',
+            'description' => "Homepage news widget"
+        )
+    );
+    register_sidebar(
+        array(
+            'before_title' => '',
+            'after_title' => '',
             'before_widget' => '<ul class="news-list">',
             'after_widget' => '</ul>',
             'name' => 'News',

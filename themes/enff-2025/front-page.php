@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
+<?php //dynamic_sidebar('image'); ?>
+<?php get_template_part('partials/sections/section--news--homepage'); ?>
+
 <section class="content-section">
-	<div class="gradient-top"></div>
-	<?php dynamic_sidebar('image'); ?>
+	<!-- <div class="gradient-top"></div> -->
 	<?php dynamic_sidebar('announcements'); ?>
 
 	<!-- specific to front page -->
@@ -33,7 +35,7 @@
 	<div class="gradient-bottom"></div>
 </section>
 
-<?php get_template_part('partials/sections/section--news'); ?>
+<?php //get_template_part('partials/sections/section--news'); ?>
 
 
 <?php get_footer(); ?>

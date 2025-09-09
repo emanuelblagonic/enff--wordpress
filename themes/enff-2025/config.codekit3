@@ -25,6 +25,14 @@
       "oAP" : "\/404.php",
       "oF" : 0
     },
+    "\/acf-json\/group_68664b45d3add.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/acf-json\/group_68664b45d3add-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/archive.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -227,6 +235,14 @@
       "oAP" : "\/home-nav.php",
       "oF" : 0
     },
+    "\/includes\/create-option-pages.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/includes\/create-option-pages.php",
+      "oF" : 0
+    },
     "\/includes\/load-addon-css.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -249,6 +265,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/page.php",
+      "oF" : 0
+    },
+    "\/partials\/sections\/section--news--homepage.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/partials\/sections\/section--news--homepage.php",
       "oF" : 0
     },
     "\/partials\/sections\/section--news.php" : {
@@ -2385,7 +2409,7 @@
     ],
     "rollupTreeshakingEnabled" : 1,
     "rollupTreeshakingModuleSideEffects" : 1,
-    "sassWarningStyle" : 1,
+    "sassWarningStyle" : 2,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
