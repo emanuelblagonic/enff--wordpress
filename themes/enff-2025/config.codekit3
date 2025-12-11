@@ -41,6 +41,58 @@
       "oAP" : "\/archive.php",
       "oF" : 0
     },
+    "\/assets\/images\/homepage-logo-mobile.png" : {
+      "ft" : 32768,
+      "iS" : 617293,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/homepage-logo-mobile.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/homepage-logo.png" : {
+      "ft" : 32768,
+      "iS" : 760166,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/homepage-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/old.homepage-logo-mobile.png" : {
+      "ft" : 32768,
+      "iS" : 614505,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/old.homepage-logo-mobile.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/assets\/images\/old.homepage-logo.png" : {
+      "ft" : 32768,
+      "iS" : 697083,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/old.homepage-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/assets\/js\/app-vue.js" : {
       "bF" : 0,
       "ft" : 64,

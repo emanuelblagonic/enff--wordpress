@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
 <?php //dynamic_sidebar('image'); ?>
+
+<div class="welcome-text" id="homepage-welcome">
+  <p>Our 17th edition: five days celebrating the best of today's cinema from across broader Eastern Europe — with focus sections, panels, Q&A's, wine tastings, the New Talents Competition, a youth film, classics and  film art and much more. An outstanding programme in a vibrant social setting — join us at Filmhuis Den Haag! A festival of different voices, bold visions and shared histories.</p>
+</div>
+
 <?php get_template_part('partials/sections/section--news--homepage'); ?>
 
 <section class="content-section">
@@ -28,6 +33,9 @@
 	<div class="spotlight-wrapper">
 		<?php dynamic_sidebar('movie-spotlight'); ?>
 	</div>
+  <div class="survey-wrapper">
+    <a href="https://forms.gle/LubMqcTAb1ggD8Qf8" class="button">Take the festival survey</a>
+  </div>
 	<div class="newsletter-wrapper">
 		<h2>ENFF Newsletter</h2>
 		<?php dynamic_sidebar('newsletter'); ?>

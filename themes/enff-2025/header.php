@@ -72,3 +72,36 @@
         </div>
       </nav>
 		</header>
+
+    <?php
+      // Get option fields (ACF returns array or null)
+      $banner_desktop = get_field('option__banner_desktop', 'option');
+      $banner_mobile  = get_field('option__banner_mobile', 'option');
+    
+      // Extract URLs if valid
+      $desktop_url = $banner_desktop['url'] ?? null;
+      $mobile_url  = $banner_mobile['url'] ?? null;
+    
+      // Show ACF banners only if at least one exists
+      if ($desktop_url || $mobile_url) :
+    ?>
+      <div class="website-intro-image">
+        <?php if ($mobile_url) : ?>
+          <img src="<?php echo esc_url($mobile_url); ?>" class="logo-mobile" alt="" />
+        <?php endif; ?>
+    
+        <?php if ($desktop_url) : ?>
+          <img src="<?php echo esc_url($desktop_url); ?>" class="logo-desktop" alt="" />
+        <?php endif; ?>
+      </div>
+    
+    <?php else : ?>
+    
+      <!-- Fallback to your original images -->
+      <div class="website-intro-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-logo-mobile.png" class="logo-mobile" alt="" />
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/homepage-logo.png" class="logo-desktop" alt="" />
+      </div>
+    
+    <?php endif; ?>
+    
